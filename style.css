@@ -1,13 +1,13 @@
-
-.html, body{
+.html,
+body {
   font-family: 'Poppins', 'sans-serif' !important;
 }
 
-.body-light{
+.body-light {
   background-color: #e6e6e6;
 }
 
-.body-dark{
+.body-dark {
   background-color: #212529;
 }
 
@@ -33,26 +33,30 @@
   box-shadow: none;
 }
 
-.home{
+#navbar {
+  transition: opacity 0.3s;
+}
+
+.home {
   margin-top: 2%;
   margin-bottom: 10%;
 }
 
-.introduction{
+.introduction {
   margin: 2% 0 0 0;
 }
 
-.introduction h1{
+.introduction h1 {
   font-weight: 600;
   font-size: 2.8rem;
 }
 
-.profile{
+.profile {
   width: 100%;
   box-shadow: 2px 2px 10px #000000;
 }
 
-.sidebar{
+.sidebar {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,15 +64,15 @@
   bottom: 0;
 }
 
-.sidebar svg{
+.sidebar svg {
   margin-top: 15vh;
 }
 
-.sidebar svg:hover{
+.sidebar svg:hover {
   cursor: pointer;
 }
 
-.sidebar a{
+.sidebar a {
   writing-mode: vertical-rl;
   text-orientation: mixed;
   letter-spacing: .1em;
@@ -76,7 +80,7 @@
   color: inherit;
 }
 
-.sidebar a:hover{
+.sidebar a:hover {
   cursor: pointer;
 }
 
@@ -86,7 +90,7 @@
   height: 5rem;
 }
 
-.about{
+.about {
   margin-top: 10%;
   margin-bottom: 5%;
 }
@@ -96,7 +100,7 @@
   margin-bottom: 4%;
 }
 
-.experience{
+.experience {
   margin-top: 5%;
   margin-bottom: 2%;
 }
@@ -106,17 +110,17 @@
   margin-bottom: 4%;
 }
 
-.job{
+.job {
   margin: 0 0 10% 0;
 }
 
-.role{
+.role {
   font-weight: 600;
   margin-bottom: 0.2rem;
 }
 
 
-.education{
+.education {
   margin-top: 2%;
   margin-bottom: 2%;
 }
@@ -126,16 +130,16 @@
   margin-bottom: 4%;
 }
 
-.university{
+.university {
   margin: 0 0 10% 0;
 }
 
-.degree{
+.degree {
   font-weight: 600;
   margin-bottom: 0.2rem;
 }
 
-.skills{
+.skills {
   margin-top: 2%;
   margin-bottom: 8%;
 }
@@ -144,17 +148,17 @@
   font-weight: 600;
 }
 
-.stack{
+.stack {
   margin-top: 4%;
   font-weight: 600;
 
 }
 
-.icons{
+.icons {
   height: 25%;
 }
 
-.project{
+.project {
   margin-top: 2%;
   margin-bottom: 8%;
 }
@@ -163,21 +167,39 @@
   font-weight: 600;
 }
 
-.project-row{
-  margin-top: 5%;
+.project-row {
+  margin-top: 8%;
 }
 
-.project-image-col{
-  padding: 10% 5% 0 0;
+.project-image-col {
+  padding: 0% 5% 0 0;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
 }
 
-.project-image{
+.project-image {
   width: 100%;
-  height: 90%;
+  aspect-ratio: 3/2;
   border-radius: 2%;
   box-shadow: 1px 1px 5px #00001178;
 }
 
-.project-name{
+.project-name {
   font-weight: 600;
+}
+
+.contact {}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-me-form{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
