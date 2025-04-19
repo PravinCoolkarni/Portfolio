@@ -37,6 +37,33 @@ body {
   transition: opacity 0.3s;
 }
 
+.navbar-nav .nav-item {
+  margin: 0 0.7rem; /* Adds spacing on both left and right */
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.0rem;
+  height: 2px;
+  width: 0px;
+  background-color: rgb(74 222 128);
+  transition: all 0.3s cubic-bezier(.4,0,.2,1);
+}
+
+.nav-link:hover {
+  color: rgb(74, 222, 128); /* Ensure the text color stays the same on hover */
+}
+
+.nav-link:hover::after {
+  width: 100%; /* Expands the underline on hover */
+}
+
 .home {
   margin-top: 2%;
   margin-bottom: 10%;
@@ -189,7 +216,10 @@ body {
   font-weight: 600;
 }
 
-.contact {}
+.contact {
+  margin-top: 2%;
+  margin-bottom: 8%;
+}
 
 .contact-me {
   display: flex;
@@ -202,4 +232,83 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.author-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* ********************** Media Queries *************************** */
+
+@media (max-width: 992px) {
+  .project-image-col{
+    padding: 8% 5%;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .navbar-collapse{
+    padding-top: 0.7em;
+  }
+
+  .form-switch {
+    padding-left: 3.0em;
+  }
+
+  .profile{
+    width: 90%;
+    box-shadow: 2px 2px 10px #000000;
+  }
+
+  .get-in-touch{
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-section{
+    display: flex;
+    justify-content: center;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .about-me{
+    display: flex;
+    justify-content: center;
+  }
+
+  .experience-me{
+    display: flex;
+    justify-content: center;
+  }
+
+  .education-me{
+    display: flex;
+    justify-content: center;
+  }
+
+  .skills-me{
+    display: flex;
+    justify-content: center;
+  }
+
+  .project-me{
+    display: flex;
+    justify-content: center;
+  }
+
+  .project-row{
+    margin-top: 0%;
+  }
+
 }

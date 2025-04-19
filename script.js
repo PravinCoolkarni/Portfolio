@@ -67,7 +67,9 @@ function SwitchTheme() {
 }
 
 
-async function submitContactForm(event){
+
+
+function submitContactForm(event){
 
     event.preventDefault();
 
@@ -80,33 +82,35 @@ async function submitContactForm(event){
         message: formData.get('message')
     };
 
-    const requestOptions = {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*'
+    const submitButton = form.querySelector('.submit-btn');
+    const buttonText = submitButton.querySelector('.button-text');
+    const spinner = submitButton.querySelector('.spinner');
+    const spinnerText = submitButton.querySelector('.spinner-text');
+
+    // Show the spinner and disable the button
+    buttonText.style.display = 'none';
+    spinner.style.display = 'inline-block';
+    spinnerText.style.display = 'inline-block'; 
+    submitButton.disabled = true;
+
+    emailjs.send('service_4m507lx', 'template_kl4xj77', data).then(
+        (response) => {
+          response.status === 200 && response.text === 'OK' ? alert('Message sent successfully!') : alert('Failed to send message. Please try again later.');
+          form.reset();
         },
-        body: JSON.stringify(data)
-    };
+        (error) => {
+          alert('Failed to send message. Please try again later.');
+          form.reset();
+          console.log('FAILED...', error);
+        },
+    ).finally(() => {
+        // Hide the spinner, enable the button, and restore the text
+        buttonText.style.display = 'inline';
+        spinner.style.display = 'none';
+        spinnerText.style.display = 'none';
+        submitButton.disabled = false;
+    });
 
-    console.log('Form data:', data);
-    try{
-        const response = await fetch(apiUrl, requestOptions);
-
-        if (!response.ok) {
-            throw new Error(`Server error: ${response.statusText}`);
-        }
-
-        const result = await response.json();
-        console.log('Success:', result);
-        alert('Form submitted successfully!');
-        form.reset();
-    }
-    catch(error){
-        console.error('Error:', error);
-        alert('There was an error submitting the form.');
-        form.reset();
-    }
 }
 
 
