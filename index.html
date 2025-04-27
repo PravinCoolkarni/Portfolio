@@ -56,7 +56,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="">
                             <img src="./favicon/favicon.ico" alt="Logo">
                         </a>
                         <ul class="navbar-nav me-auto">
@@ -78,7 +78,7 @@
                         </ul>
                     </div>
                     <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" onchange="SwitchTheme()">
+                        <input class="form-check-input" type="checkbox" onchange="switchTheme()">
                     </div>
                 </div>
             </nav>
@@ -88,14 +88,15 @@
                 <div class="col-md-6 gy-4">
                     <div class="introduction">
                         <p class="theme-color" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">Hi, my name is</p>
-                        <h1 class="" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Pravin Kulkarni</h1>
-                        <h1 data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Building the web, better!</h1>
-                        <P data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident numquam ex accusamus
-                            at corrupti. Molestias ut nemo cupiditate tenetur maiores, iure cum id eos eligendi
-                            facilis, aut labore necessitatibus explicabo?</P>
+                        <p class="headline" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Pravin Kulkarni</p>
+                        <p class="headline" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">A Full Stack Web Developer!</p>
+                        <P data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">Passionate about building impactful digital experiences. With expertise in Angular, .NET, Express js and SQL Server, I focus on making the web faster, smarter, and future-ready. I believe in clean code, intuitive design, and scalable solutions that power the next generation of web applications.</P>
                     </div>
                     <div class="get-in-touch mt-5" >
-                        <button type="button" class="btn btn-outline-success col-md-3 py-3 px-2" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" onclick="location.href='#contact'">Get In Touch</button>
+                        <button type="button" class="btn btn-outline-success col-md-3 me-4 py-3 px-2" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" onclick="location.href='#contact'">Get In Touch</button>
+                        <button type="button" class="btn btn-outline-success col-md-3 ms-4 py-3 px-2" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" onclick="downloadResume()">Resume <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16">
+                            <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/>
+                          </svg></button>
                     </div>
                 </div>
                 <div class="col-md-4 gy-4 profile-section">
@@ -110,15 +111,10 @@
                     <h4 class="about-me theme-color" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">About Me</h4>
                     <div class="row">
                         <div class="col-md-8">
-                            <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error dolore totam quis eius
-                                optio?
-                                Cum dignissimos ducimus nisi odit explicabo quaerat voluptas quisquam autem quos
-                                consectetur
-                                possimus, minima nostrum dicta?</p>
-                            <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores ea voluptates
-                                consectetur modi ullam nemo cupiditate, ab minus voluptate repellendus aperiam vero
-                                quasi,
-                                labore saepe quaerat. Illum ipsam et magni?</p>
+                            <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Currently, I am working as a Senior Executive Web Developer at ECU WorldWide, where I design and develop modern, scalable solutions using Angular, .NET, SQL Server, Node.js/Express.js, and Microservices Architecture.</p>
+                            <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">I believe great web development is not just about writing code — it’s about crafting intuitive, efficient, and user-focused digital experiences. Clean code, scalable architecture, and future-proof designs are at the heart of everything I build.
+                                I'm always excited to embrace new technologies, solve challenging problems, and contribute to creating the next generation of web applications. My mission is simple: making the web faster, smarter, and ready for the future.</p>
+                            <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Beyond coding, I'm a lifelong learner who enjoys exploring new ideas, refining my skills, and staying ahead in the fast-moving tech world</p>
                         </div>
                         <div class="col-md-4"></div>
                     </div>
@@ -138,18 +134,10 @@
                                 </p>
                                 <ul>
                                     <li data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                                        <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error dolore totam
-                                            quis eius optio?
-                                            Cum dignissimos ducimus nisi odit explicabo quaerat voluptas quisquam autem
-                                            quos consectetur
-                                            possimus, minima nostrum dicta?</p>
+                                        <p >During my internship at ECU Worldwide, I strengthened my front-end development skills using Angular to build dynamic, responsive interfaces.</p>
                                     </li>
                                     <li data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                                        <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores ea
-                                            voluptates
-                                            consectetur modi ullam nemo cupiditate, ab minus voluptate repellendus
-                                            aperiam vero quasi,
-                                            labore saepe quaerat. Illum ipsam et magni?</p>
+                                        <p >Additionally, I debugged existing solution, resolving bugs to improve stability and performance. </p>
                                     </li>
                                 </ul>
                             </div>
@@ -159,18 +147,13 @@
                                 </p>
                                 <ul>
                                     <li data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                                        <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error dolore totam
-                                            quis eius optio?
-                                            Cum dignissimos ducimus nisi odit explicabo quaerat voluptas quisquam autem
-                                            quos consectetur
-                                            possimus, minima nostrum dicta?</p>
+                                        <p >After my internship, I continued at ECU Worldwide as a Graduate Engineer Trainee, where I worked on several key projects. I led the migration of file storage from the backend server to Azure Blob Storage, enhancing data management and scalability.</p>
                                     </li>
                                     <li data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                                        <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores ea
-                                            voluptates
-                                            consectetur modi ullam nemo cupiditate, ab minus voluptate repellendus
-                                            aperiam vero quasi,
-                                            labore saepe quaerat. Illum ipsam et magni?</p>
+                                        <p>Additionally, I implemented the dynamic banners feature for ECU360, worked on the white label of ECU360, and contributed to the white label of TNT, ensuring seamless branding and integration for multiple clients.</p>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                                        <p >I also worked on automating TNT email processes, enhancing operational efficiency, and developed the Sync on Request Quotes feature, streamlining the process for users. These projects allowed me to apply my skills in Angular, .NET, and Azure, while deepening my understanding of scalable solutions, cloud architecture, and automation in a dynamic, fast-paced environment.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -180,18 +163,10 @@
                                 </p>
                                 <ul>
                                     <li data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                                        <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error dolore totam
-                                            quis eius optio?
-                                            Cum dignissimos ducimus nisi odit explicabo quaerat voluptas quisquam autem
-                                            quos consectetur
-                                            possimus, minima nostrum dicta?</p>
+                                        <p >After being promoted to Senior Executive Web Developer at ECU Worldwide, I took on the responsibility of leading several innovative features aimed at enhancing the user experience and security of the platform. I successfully implemented Multi-factor Authentication to bolster user security, introduced an AI Assistant to streamline portal interactions, and integrated Geo Tariff for more accurate and efficient quote generation.</p>
                                     </li>
                                     <li data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                                        <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores ea
-                                            voluptates
-                                            consectetur modi ullam nemo cupiditate, ab minus voluptate repellendus
-                                            aperiam vero quasi,
-                                            labore saepe quaerat. Illum ipsam et magni?</p>
+                                        <p >In addition to these projects, I had the opportunity to explore and implement new technologies, including Express.js for container utilization, which optimized application performance and resource management. I also worked with PostgreSQL to enhance the Aqua Project, improving data handling and scalability.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -241,7 +216,7 @@
                 <div class="col-md-10 gy-4">
                     <h4 class="skills-me theme-color" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">Skills</h4>
                     <p class="stack" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Front End</p>
-                    <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    <div class="row" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                         <div class="col-sm-3 col-6 justify-content-center d-flex flex-column text-center ">
                             <img class="icons"
                                 src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/angular/angular-original.svg"
@@ -265,7 +240,7 @@
                             <span>Javascript</span>
                         </div>
                     </div>
-                    <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="row" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                         <div class="col-sm-3 col-6 justify-content-center d-flex flex-column text-center ">
                             <img class="icons"
                                 src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/bootstrap/bootstrap-original.svg"
@@ -290,7 +265,7 @@
                         </div>
                     </div>
                     <p class="stack" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Back End</p>
-                    <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    <div class="row" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                         <div class="col-sm-3 col-6 justify-content-center d-flex flex-column text-center ">
                             <img class="icons"
                                 src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/csharp/csharp-original.svg"
@@ -314,7 +289,7 @@
                             <span>Entity Framework</span>
                         </div>
                     </div>
-                    <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="row" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                         <div class="col-sm-3 col-6 justify-content-center d-flex flex-column text-center ">
                             <img class="icons"
                                 src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/nodejs/nodejs-original.svg"
@@ -339,7 +314,7 @@
                         </div>
                     </div>
                     <p class="stack" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Database</p>
-                    <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    <div class="row" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                         <div class="col-sm-3 col-6 justify-content-center d-flex flex-column text-center ">
                             <img class="icons"
                                 src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
@@ -364,7 +339,7 @@
                         </div>
                     </div>
                     <p class="stack" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">DevOps</p>
-                    <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    <div class="row" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                         <div class="col-sm-3 col-6 justify-content-center d-flex flex-column text-center ">
                             <img class="icons"
                                 src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/git/git-original.svg"
@@ -395,7 +370,7 @@
             <div class="row project" id="project">
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
-                    <h4 class="project-me theme-color" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">Thinks I've worked on</h4>
+                    <h4 class="project-me theme-color" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">Things I've worked on</h4>
                     <div class="row project-row">
                         <div class="col-lg-7 project-image-col">
                             <img class="project-image" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000" src="./images/MedEasy.jpg" alt="">
@@ -405,10 +380,10 @@
                             <h5 class="project-name" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">MedEasy</h5>
                             <ul >
                                 <li data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat natus maiores facere tenetur pariatur. Incidunt dolore tempora impedit ea voluptatum, suscipit, animi magnam quod placeat harum ipsum perferendis molestiae magni.
+                                    MedEasy is a website through which old age people can arrange their appointments with the doctor without visiting a clinic and able to the best doctor of their location for the disease from which they are suffering.
                                 </li>
                                 <li data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nihil dicta dolorem fugit quas numquam eum quis sequi delectus enim porro obcaecati aliquid nulla, ipsa exercitationem nam, a impedit maiores.
+                                    The website is designed in such a way that it is easy to use for old age people. It has a simple and user-friendly interface.
                                 </li>
                             </ul>
                             <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Django, HTML, CSS, Javascript</p>
@@ -423,10 +398,7 @@
                             <h5 class="project-name" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">CarData</h5>
                             <ul>
                                 <li data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolor excepturi recusandae, sapiente est modi sequi sunt repudiandae praesentium quasi quos quas porro quia voluptate, molestias laboriosam exercitationem distinctio quam?
-                                </li>
-                                <li data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolor excepturi recusandae, sapiente est modi sequi sunt repudiandae praesentium quasi quos quas porro quia voluptate, molestias laboriosam exercitationem distinctio quam?
+                                    CarData is a static website through which users can find the best car present in indian market for them. It has a simple and user-friendly interface.
                                 </li>
                             </ul>
                             <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">HTML, CSS, Javascript</p>

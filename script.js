@@ -31,7 +31,7 @@ window.addEventListener("scroll", function() {
 });
 
 
-function SwitchTheme() {
+function switchTheme() {
     let theme = document.body.getAttribute('data-bs-theme');
     if (theme === 'dark') {
         document.body.setAttribute('data-bs-theme', 'light');
@@ -66,6 +66,14 @@ function SwitchTheme() {
     }
 }
 
+function downloadResume() {
+    const url = 'https://drive.google.com/uc?export=download&id=1bcIlMzzHammq5fdbRZ1dDcj9I4HyzzNL';
+    const link = document.createElement('a');
+    link.href = url;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
 
 
 
