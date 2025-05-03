@@ -67,7 +67,7 @@ function switchTheme() {
 }
 
 function downloadResume() {
-    const url = 'https://drive.google.com/uc?export=download&id=1bcIlMzzHammq5fdbRZ1dDcj9I4HyzzNL';
+    const url = 'https://drive.google.com/uc?export=download&id=16zvBgBZLr1RvCWVKUdnkZ7fWiOJmse1G';
     const link = document.createElement('a');
     link.href = url;
     document.body.appendChild(link);
